@@ -54,18 +54,24 @@
 .header__img img {
     width:556px;
     height:438px;
+    transition: transform 1s;
+}
+.header__img img:hover {
+    transform:translateX(50px);
 }
 
 /*------------------------------
          players style
 -------------------------------- */
-.players{
+.players__section {
     width:1050px;
     margin: auto;
+}
+.players{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    padding:60px 0;
+    padding-top: 50px;
 }
 .player{
     padding:15px;
@@ -88,7 +94,7 @@
 .section__title {
     color: salmon;
     font-size:30px;
-    padding-bottom: 20px;
+    padding:60px 0;
 }
 .teams {
     display:grid;
@@ -115,6 +121,23 @@
 }
 .team__detail {
     color:#777;
+}
+/*--------------------------------
+            watch__live
+----------------------------------*/
+.watch__live {
+    width:1050px;
+    margin: auto;
+}
+.channels{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.channel img {
+    width:500px;
+    height:400px;
+    border-radius: 5px;
 }
 /*-------------------------------- 
         footer stylesheet 
@@ -173,8 +196,10 @@
         display:flex;
         flex-wrap: wrap;
     }
-    .players{
+    .players__section {
         width:350px;
+    }
+    .players{
         grid-template-columns: repeat(1, 1fr);
     }
     .player{
@@ -199,5 +224,19 @@
     }
     .team {
         display:block;
+    }
+    .watch__live {
+        width:100%;
+    }
+    .channels{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .channel {
+        width:100%;
+        text-align:center;
+    }
+    .channel img {
+        width:350px;
+        height:300px;
     }
 }
