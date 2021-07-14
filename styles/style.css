@@ -1,4 +1,6 @@
-/* google fonts  */
+/*---------------------------
+         google fonts  
+-----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
 /*-------------------------------
             utilities 
@@ -8,7 +10,9 @@
     padding:0;
     font-family: 'Poppins', sans-serif;
 }
-/*------ header styles ------------*/
+/*---------------------------------
+           header styles 
+----------------------------------*/
 .header {
     width: 1440px;
     height:670px;
@@ -52,32 +56,76 @@
     height:438px;
 }
 
-/* players style */
+/*------------------------------
+         players style
+-------------------------------- */
 .players{
     width:1050px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    padding: 60px 0;
+    padding:60px 0;
 }
 .player{
     padding:15px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
 .player img{
     width: 300px;
     height:256px;
 }
 
-/* footer stylesheet */
+/*--------------------------------
+        favorite teams 
+--------------------------------*/
+.fav__teams {
+    width:1050px;
+    margin: auto;
+}
+.section__title {
+    color: salmon;
+    font-size:30px;
+    padding-bottom: 20px;
+}
+.teams {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.team {
+    display:flex;
+    align-items:center;
+    background-color:rgba(128, 128, 128, 0.055);
+    border-radius: 5px;
+    padding:20px 10px;
+}
+.team__imgae img {
+    width:250px;
+    border-radius:5px;
+}
+.team__info {
+    padding:0 15px;
+}
+.team__name {
+    color:salmon;
+    padding:12px 0;
+}
+.team__detail {
+    color:#777;
+}
+/*-------------------------------- 
+        footer stylesheet 
+----------------------------------*/
 .footer{
     width:430px;
     height:213px;
     margin:auto;
 }
 .logo__image img{
+    margin-top: 30px;
     width:100%;
     height:110px;
 }
@@ -129,11 +177,27 @@
         width:350px;
         grid-template-columns: repeat(1, 1fr);
     }
+    .player{
+        padding:15px;
+    }
     .footer{
         width:370px;
     }
     .logo__image img{
-        width:350px;
+        width:330px;
         height:110px;
+    }
+    .fav__teams {
+        width:100%;
+    }
+    .section__title {
+        font-size:23px;
+        padding-left: 7px;
+    }
+    .teams {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team {
+        display:block;
     }
 }
